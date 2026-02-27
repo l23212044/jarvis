@@ -2,6 +2,28 @@
 <img width="3039" height="1517" alt="Screenshot 2026-02-26 211156" src="https://github.com/user-attachments/assets/4576e1e2-5ff0-4988-91e1-f3869c3dfe7e" />
 <img width="2100" height="1506" alt="Screenshot 2026-02-26 211140" src="https://github.com/user-attachments/assets/849b7703-1f61-43e9-9501-2a65db0242ee" />
 
+.done:
+    mov Rb, Rc      ; Rb = 255
+    mov Rc, Rb      ; Rc = 255
+    inc Rc          ; Rc = 255+1 = 0 (overflow, Rc = 0)
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc
+    inc Rc          ; Rc = 10
+
+.loop:
+    mov Rd, Rc
+    add Rc, Rb      ; Rc - 1
+    jc .loop
+    mov Rd, Rc
+    jmp .done       ; volver a 10 sin reconstruir Rb
+
 Se logró una comprensión de cómo fluye la información a través del bus y de cómo funcionan los saltos condicionales.
 
 Esta práctica permitió comprender de manera clara cómo un programa en ensamblador interactúa directamente con la arquitectura física de una computadora de 8 bits.
