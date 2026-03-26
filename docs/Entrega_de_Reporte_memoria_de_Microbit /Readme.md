@@ -31,7 +31,9 @@ while True:
     message = radio.receive()
     if message:
         display.scroll(message)
-
+```
+### Emisor
+```python
 from microbit import *
 import radio
 
