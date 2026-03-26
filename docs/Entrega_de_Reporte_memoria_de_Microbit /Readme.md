@@ -1,5 +1,3 @@
-# Datos
-
 **Nombre:Pineda Gomez Ricardo Alejandro**  
 **Matrícula:23212044**  
 **Fecha: 26/03/2026**  
