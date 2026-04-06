@@ -1,5 +1,5 @@
 # Tecnologías Emergentes en Computación
-
+ 
 **JPineda Gomez Ricardo Alejandro**  
 **Fecha:** 24 de febrero de 2026
 
